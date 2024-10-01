@@ -47,7 +47,7 @@ const Navbar = () => {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="rounded py-1 px-2 text-sm font-semibold leading-6  bg-navbar-blue text-white">
+          <a href="#" className="rounded py-1 px-2 text-sm font-semibold leading-6 font-poppins bg-navbar-blue text-white">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>

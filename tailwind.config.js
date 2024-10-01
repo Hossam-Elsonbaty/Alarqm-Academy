@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily :{
       'poppins' : ['Poppins', 'sans-serif'],
+      'LibreBaskerville' : ['Libre Baskerville', 'sans-serif'],
     },
     extend: {
       colors: {
