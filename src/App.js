@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 const App = ()=> {
   const location = useLocation();
   useEffect(()=>{
-    AOS.init();
+    AOS.init({once: true,});
   })
   return (
     <>
@@ -24,4 +24,15 @@ const MainApp = () => (
   </Router>
 );
 export default MainApp;
+// "@emotion/react": "^11.13.3",
+// "@emotion/styled": "^11.13.0",
+// "@fortawesome/fontawesome-svg-core": "^6.6.0",
+// "@fortawesome/free-brands-svg-icons": "^6.6.0",
+// "@fortawesome/free-regular-svg-icons": "^6.6.0",
+// "@fortawesome/free-solid-svg-icons": "^6.6.0",
+// "@fortawesome/react-fontawesome": "^0.2.2",
+// "@headlessui/react": "^2.1.8",
+// "@heroicons/react": "^2.1.5",
+// "@mui/icons-material": "^6.1.1",
+// "@mui/material": "^6.1.1",
 

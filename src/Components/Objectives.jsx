@@ -1,8 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaLeanpub } from "react-icons/fa";
 import { FaBookQuran } from "react-icons/fa6";
-import { FaBookBookmark } from "react-icons/fa6";
 import { GiBookshelf } from "react-icons/gi";
 import { GiTeacher } from "react-icons/gi";
 import { BsTranslate } from "react-icons/bs";
@@ -10,54 +8,14 @@ import { SiKnowledgebase } from "react-icons/si";
 export const Objectives = () => {
   return (
     <>
-      {/* <section className='objectives-section '>
-        <header className='header'>
-          <h1>Objectives of Al-Arqam Academy</h1>
-          <span className='font-poppins'> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </span>
-        </header>
-        <div className='objectives-list'>
-          <div className='objective'>
-            <FaLeanpub />
-            <h1> Shariah-related information </h1>
-            <span> 
-              Iscapable of obtaining Shariah-related information from primary sources in
-              the Arabic language through valid, reliable, and credible research methods.
-            </span>
-          </div>
-          <div className='objective'>
-            <FaLeanpub />
-            <h1> Shariah-related information </h1>
-            <span> 
-              Iscapable of obtaining Shariah-related information from primary sources in
-              the Arabic language through valid, reliable, and credible research methods.
-            </span>
-          </div>
-          <div className='objective'>
-            <FaLeanpub />
-            <h1> Shariah-related information </h1>
-            <span> 
-              Iscapable of obtaining Shariah-related information from primary sources in
-              the Arabic language through valid, reliable, and credible research methods.
-            </span>
-          </div>
-          <div className='objective'>
-            <FaLeanpub />
-            <h3> Shariah-related information </h3>
-            <span> 
-              Iscapable of obtaining Shariah-related information from primary sources in
-              the Arabic language through valid, reliable, and credible research methods.
-            </span>
-          </div>
-        </div>
-      </section> */}
-      <div class="bg-white py-24 sm:py-32 items-center flex flex-col gap-10">
+      <div class="bg-white py-24 sm:py-32 objectives items-center flex flex-col gap-10">
         <header className='header'>
           <h1 className='font-LibreBaskerville text-4xl font-bold tracking-tight sm:text-6xl'>Objectives of Al-Arqam Academy</h1>
           <span className='font-poppins'> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </span>
         </header>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            <div className='objective'data-aos="fade-up">
+            <div className='objective'data-aos="fade-up"data-aos-delay="30" data-aos-duration="300">
               <span className='icon-cont'><GiBookshelf /></span>
               <h1> Shariah-related information </h1>
               <span className='description'> 

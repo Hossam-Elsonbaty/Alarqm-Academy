@@ -1,50 +1,4 @@
-// .objectives-section {
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-//   padding: 100px 300px;
-//   margin-left:auto ;
-//   margin-right:auto ;
-//   gap: 3rem;
-//   .header{
-//     display: flex;
-//     gap: 1.5rem;
-//     flex-direction: column;
-//     align-items: center;
-//     max-width: 58%;
-//     h1{
-//       color: var(--Deep-teal);
-//       font-size: 2rem;
-//       position: relative;
-//       padding-bottom:10px ;
-//       &::after{
-//         content: "";
-//         position: absolute;
-//         bottom: 0;
-//         left: 50%;
-//         transform: translate(-50%,-50%);
-//         width: 80px;
-//         height: 3.7px;
-//         background-color: var(--Golden-sand);
-//       }
-//     }
-//     span{
-//       color: #333;
-//       font-size: 16px;
-//       line-height: 1.6;
-//       text-align: center;
-//     }
-//   }
-//   .objectives-list{
-//     display: flex;
-//     justify-content: space-between;
-//     flex-direction: row;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     gap: 40px;
-//   }
-// }
+.objectives{
   .header{
     display: flex;
     gap: 1.5rem;
@@ -75,34 +29,34 @@
       
     }
   }
-
-.objective{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  .icon-cont {
-    width: 60px;
-    height: 60px;
-    border-radius: 40%;
-    background-color: rgba(79, 176, 220, 0.1);
+  .objective{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    border:1px solid rgba(79, 176, 220, 0.2);
-    box-shadow:inset 0 0 0 3px #fff;
-    svg {
-      font-size: 30px;
-      color: #4fb0dc;
+    flex-direction: column;
+    gap: 10px;
+    .icon-cont {
+      width: 60px;
+      height: 60px;
+      border-radius: 40%;
+      background-color: rgba(79, 176, 220, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1px;
+      border:1px solid rgba(79, 176, 220, 0.2);
+      box-shadow:inset 0 0 0 3px #fff;
+      svg {
+        font-size: 30px;
+        color: #4fb0dc;
+      }
     }
-  }
-  h1{
-    font-weight: 500;
-    font-size: 18px;
-    text-align: start;
-  }
-  .description{
-    font-size: 16px;
-    text-align: start;
+    h1{
+      font-weight: 500;
+      font-size: 18px;
+      text-align: start;
+    }
+    .description{
+      font-size: 16px;
+      text-align: start;
+    }
   }
 }
