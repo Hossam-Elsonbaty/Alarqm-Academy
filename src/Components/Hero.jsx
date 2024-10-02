@@ -1,6 +1,4 @@
-'use client'
 import React, {useEffect, useState} from 'react'
-import Patterns from '../Images/White.png';
 export default function Example() {
   const [displayedText, setDisplayedText] = useState('');
   const text = "AL-Arqam Academy aims to make Shariah studies accessible for the participants in its programs. The main objective of the program is to equip young Muslims with the necessary, proper knowledge grounded on the Book of Allah and Sunnah of the Prophet (PBUH) to understand their religion and to promote and reinforce sound Shariah studies with an understanding of the righteous predecessors through a modern, easily fathomable approach that is in touch with the reality of time and place.";
