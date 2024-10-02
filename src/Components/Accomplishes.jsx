@@ -1,6 +1,4 @@
 import React from 'react';
-import { FaBookQuran } from "react-icons/fa6";
-import { FiCheckCircle } from "react-icons/fi";
 import image from '../Images/JPG Grey_Blue.jpg'
 export const Accomplishes = () => {
   return (
@@ -26,7 +24,7 @@ export const Accomplishes = () => {
               <div className='checks'>
                 <ul className='pl-12'>
                   <li className='mb-5'>
-                    <p className='col-span-2 '>
+                    <p data-aos="fade-right"data-aos-delay="30" data-aos-duration="300">
                       Teaching the Arabic language and its various branches of study starting with
                       correct pronunciations, reading, and writing while equipping students with a
                       Qur’anic vocabulary and required grammar rules and structures to develop
@@ -34,21 +32,21 @@ export const Accomplishes = () => {
                     </p>
                   </li>
                   <li className='mb-5'>
-                    <p>
+                    <p data-aos="fade-right"data-aos-delay="50" data-aos-duration="1000">
                       Advancing to the applications and sciences of Arabic including syntax,
                       morphology, literature, and eloquence to understand Arabic texts in general
                       and to understand and engage with the Quran in particular.
                     </p>
                   </li>
                   <li className='mb-5'>
-                    <p>
+                    <p data-aos="fade-right"data-aos-delay="100" data-aos-duration="1000">
                       Presenting the Shariah sciences in a modern and approachable way utilizing
                       modern methods of teaching in terms of trained professionals and effective
                       teaching tools.
                     </p>
                   </li>
                   <li className='mb-5'>
-                    <p>
+                    <p data-aos="fade-right"data-aos-delay="150" data-aos-duration="1000">
                       Studying the Shariah Sciences from primary sources (the Quran and Sunnah)
                       by understanding the best of generations of the righteous predecessors with
                       the most significant explanations from previous and contemporary trusted
@@ -56,7 +54,7 @@ export const Accomplishes = () => {
                     </p>
                   </li>
                   <li className='gap-4'>
-                    <p>
+                    <p data-aos="fade-right"data-aos-delay="200" data-aos-duration="1000">
                       Tijan Curriculum incorporates 7 domains of Shariah (Arabic Language,
                       Aqeedah, Fiqh, Hadith, Tafseer, Islamic Akhlaq, and Seerah).
                     </p>
@@ -64,7 +62,7 @@ export const Accomplishes = () => {
                 </ul>
               </div>
             </div>
-            <div className='img-container' data-aos="fade-up"data-aos-offset="200"data-aos-delay="50" data-aos-duration="1000">
+            <div className='img-container' data-aos="fade-up"data-aos-offset="200"data-aos-delay="250" data-aos-duration="3000">
               <img src={image} alt='image' className='image' />
             </div>
           </dl>
