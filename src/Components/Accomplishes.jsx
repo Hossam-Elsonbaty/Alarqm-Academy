@@ -5,7 +5,7 @@ export const Accomplishes = () => {
     <>
       <div class="bg-white py-24 sm:py-6 accomplish flex flex-col gap-8">
         <header className='header mx-auto max-w-7xl px-6 lg:px-8'>
-          <h1 className='font-LibreBaskerville text-4xl font-bold tracking-tight sm:text-6xl'> How Tijan Accomplishes This</h1>
+          <h1 className='font-LibreBaskerville mt-2 text-3xl font-bold tracking-tight sm:text-4xl'> How Tijan Accomplishes This</h1>
         </header>
         <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
           <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2">
@@ -62,7 +62,7 @@ export const Accomplishes = () => {
                 </ul>
               </div>
             </div>
-            <div className='img-container' data-aos="fade-up"data-aos-offset="200"data-aos-delay="250" data-aos-duration="3000">
+            <div className='img-container' data-aos="fade-up"data-aos-offset="200"data-aos-delay="250" data-aos-duration="1000">
               <img src={image} alt='image' className='image' />
             </div>
           </dl>
