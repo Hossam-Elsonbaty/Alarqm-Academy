@@ -17,7 +17,7 @@ export const Programs = () => {
         </header>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="30" data-aos-duration="300">
+            <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="200" data-aos-duration="500">
               <img src={image} alt="image" className='w-24' />
               <h1 className='font-LibreBaskerville'>My First Step in the Quran Journey</h1>
               <p className='description'> 
@@ -33,7 +33,7 @@ export const Programs = () => {
               </div>
               <button className='start'>GET STARTED</button>
             </div>
-            <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="30" data-aos-duration="300">
+            <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="300" data-aos-duration="800">
               <img src={image} alt="image" className='w-24' />
               <h1 className='font-LibreBaskerville'>Hoffaz Dar Al-Arqam “Memorization”</h1>
               <p className='description'> 
@@ -49,7 +49,7 @@ export const Programs = () => {
               </div>
               <button className='start'>GET STARTED</button>
             </div>
-            <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="30" data-aos-duration="300">
+            <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="400" data-aos-duration="1000">
               <img src={image} alt="image" className='w-24' />
               <h1 className='font-LibreBaskerville'>Inheritors of the Prophets’ program</h1>
               <p className='description'> 
