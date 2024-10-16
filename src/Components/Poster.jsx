@@ -2,7 +2,7 @@ import React from 'react';
 import poster from '../Images/Poster.jpg';
 export default function Poster() {
   return (
-    <div className="relative offset  isolate overflow-hidden py-24 sm:py-32">
+    <div id='posterSection' className="relative offset  isolate overflow-hidden py-24 sm:py-32">
       <img
         alt="image"
         src={poster}

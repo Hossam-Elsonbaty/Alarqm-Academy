@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../Images/PNG Blue.png';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { useState } from 'react'
 import {
   Dialog,
@@ -14,7 +14,7 @@ import {
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="z-10 bg-white sticky top-0 left-0 w-full">
+    <header className="z-10 bg-white fixed top-0 left-0 w-full">
       <nav aria-label="Global" className="mx-auto px-2 flex max-w-7xl items-center justify-between p-1 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -33,18 +33,21 @@ const Navbar = () => {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
+          <Link to="#" className="cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
             HOME
-          </a>
-          <a href="#" className="tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
+          </Link>
+          <Link  smooth={true} to="heroSection" className=" cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
             ABOUT
-          </a>
-          <a href="#" className=" tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
+          </Link>
+          <Link smooth={true} to='programsSection' className="cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
             PROGRAMS
-          </a>
-          <a href="#" className="tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
+          </Link>
+          <Link smooth={true} to='ourTeam' className="cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
+            Our Team
+          </Link>
+          <Link smooth={true} to='footerSection' className="cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
             CONTACT US
-          </a>
+          </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="rounded py-1 px-2 text-sm font-semibold leading-6 font-poppins bg-navbar-blue text-white">
@@ -78,28 +81,43 @@ const Navbar = () => {
             <div className="space-y-2 py-6 ">
               <a
                 href="#"
-                className="-mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
+                onClick={() => setMobileMenuOpen(false)}
+                className="cursor-pointer -mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
               >
                 HOME
               </a>
-              <a
-                href="#"
-                className="-mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
+              <Link
+                smooth={true}
+                onClick={() => setMobileMenuOpen(false)}
+                to='heroSection'
+                className="cursor-pointer -mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
               >
                 ABOUT
-              </a>
-              <a
-                href="#"
-                className="-mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
+              </Link>
+              <Link
+                to='programsSection'
+                onClick={() => setMobileMenuOpen(false)}
+                smooth={true}
+                className="cursor-pointer -mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
               >
                 PROGRAMS
-              </a>
-              <a
-                href="#"
-                className="-mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
+              </Link>
+              <Link
+                to='ourTeam'
+                onClick={() => setMobileMenuOpen(false)}
+                smooth={true}
+                className="cursor-pointer -mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
+              >
+                Our Team
+              </Link>
+              <Link
+                to='footerSection'
+                onClick={() => setMobileMenuOpen(false)}
+                smooth={true}
+                className="cursor-pointer -mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
             <div className="py-6">
               <a

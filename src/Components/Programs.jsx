@@ -1,17 +1,11 @@
 import React from 'react';
-import { FaLeanpub } from "react-icons/fa";
-import { FaBookQuran } from "react-icons/fa6";
-import { GiBookshelf } from "react-icons/gi";
 import image from '../Images/Blue_Grey.png'
-import { GiTeacher } from "react-icons/gi";
-import { BsTranslate } from "react-icons/bs";
-import { SiKnowledgebase } from "react-icons/si";
 import FormatCurrency from '../Context/FormatCurrency';
 
 export const Programs = () => {
   return (
     <>
-      <div class="bg-white py-24 sm:py-32 objectives items-center flex flex-col gap-10">
+      <div id='programsSection' class="bg-white pt-0 py-24 sm:py-32 objectives items-center flex flex-col gap-10">
         <header className='header'>
           <h1 className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl font-LibreBaskerville '>Our Programs</h1>
         </header>

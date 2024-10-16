@@ -3,7 +3,7 @@ import image from '../Images/JPG Grey_Blue.jpg'
 export const Accomplishes = () => {
   return (
     <>
-      <div class="bg-white py-24 sm:py-6 accomplish flex flex-col gap-8">
+      <div id='accomplishSection' class="bg-white py-24 sm:py-6 accomplish flex flex-col gap-8">
         <header className='header mx-auto max-w-7xl px-6 lg:px-8'>
           <h1 className='font-LibreBaskerville mt-2 text-3xl font-bold tracking-tight sm:text-4xl'> How Tijan Accomplishes This</h1>
         </header>

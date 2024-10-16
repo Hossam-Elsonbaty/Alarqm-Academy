@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'; 
 import {BrowserRouter as Router , Routes, Route, useLocation, Link } from 'react-router-dom';
 import Home from '../src/Pages/Home'
+import {Login} from '../src/Pages/Login'
 import Navbar from '../src/Components/Navbar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,6 +14,7 @@ const App = ()=> {
     <>
       {location.pathname !== '/sign-up' && location.pathname !== '/login' && <Navbar />}
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" exact element={<Home />} />
       </Routes>
     </>

@@ -156,6 +156,19 @@
   background-color: var(--Deep-teal);
 }
 
+.ourTeam .teammateImage {
+  width: 200px;
+  border-radius: 50%;
+}
+.ourTeam .social-media {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.ourTeam .social-media svg {
+  font-size: 28px;
+}
+
 * {
   margin: 0;
   font-family: "Poppins", serif;

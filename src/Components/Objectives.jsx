@@ -8,7 +8,7 @@ import { SiKnowledgebase } from "react-icons/si";
 export const Objectives = () => {
   return (
     <>
-      <div class="bg-white py-24 sm:py-32 objectives items-center flex flex-col gap-10">
+      <div id='objectiveSection' class="bg-white py-24 sm:py-32 objectives items-center flex flex-col gap-10">
         <header className='header'>
           <h1 className='font-LibreBaskerville mt-2 text-3xl font-bold tracking-tight sm:text-4xl'>Objectives of Al-Arqam Academy</h1>
           <span className='font-poppins'> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </span>
