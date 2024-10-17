@@ -10,7 +10,7 @@ export default function Poster() {
       />
       <div className="mx-auto max-w-7xl relative px-6 lg:px-8 z-10">
         <div className="mx-auto max-w-5xl lg:mx-0 ">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Graduates of Al-Arqam Academy</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-6xl">Graduates of Al-Arqam Academy</h2>
           <p className="mt-6 text-lg text-gray-300">
             Upon successful completion of the four academic levels of the program, students
             will have gained the Shariah knowledge necessary to uphold their religion.

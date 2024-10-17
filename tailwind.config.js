@@ -6,7 +6,21 @@ module.exports = {
   theme: {
     fontFamily :{
       'poppins' : ['Poppins', 'sans-serif'],
+      'cairo' : ['Cairo', 'sans-serif'],
       'LibreBaskerville' : ['Libre Baskerville', 'sans-serif'],
+    },
+    fontSize: {
+      xxs: '0.6rem',
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+    },
+    lineHeight:{
+      'xxl':'3rem'
     },
     extend: {
       colors: {

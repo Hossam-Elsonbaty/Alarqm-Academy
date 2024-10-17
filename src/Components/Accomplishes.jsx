@@ -5,7 +5,7 @@ export const Accomplishes = () => {
     <>
       <div id='accomplishSection' class="bg-white py-24 sm:py-6 accomplish flex flex-col gap-8">
         <header className='header mx-auto max-w-7xl px-6 lg:px-8'>
-          <h1 className='font-LibreBaskerville mt-2 text-3xl font-bold tracking-tight sm:text-4xl'> How Tijan Accomplishes This</h1>
+          <h1 className='font-LibreBaskerville mt-2 text-2xl font-bold tracking-tight sm:text-4xl'> How Tijan Accomplishes This</h1>
         </header>
         <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
           <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2">

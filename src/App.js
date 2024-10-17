@@ -5,6 +5,8 @@ import {Login} from '../src/Pages/Login'
 import Navbar from '../src/Components/Navbar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from './Components/ScrollToTop';
+import { SignUp } from './Pages/SignUp';
 const App = ()=> {
   const location = useLocation();
   useEffect(()=>{
@@ -15,6 +17,7 @@ const App = ()=> {
       {location.pathname !== '/sign-up' && location.pathname !== '/login' && <Navbar />}
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/sign-up" exact element={<SignUp />} />
         <Route path="/" exact element={<Home />} />
       </Routes>
     </>
@@ -22,6 +25,7 @@ const App = ()=> {
 }
 const MainApp = () => (
   <Router>
+    <ScrollToTop/>
     <App />
   </Router>
 );

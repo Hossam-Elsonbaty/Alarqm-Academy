@@ -5,9 +5,9 @@ import FormatCurrency from '../Context/FormatCurrency';
 export const Programs = () => {
   return (
     <>
-      <div id='programsSection' class="bg-white pt-0 py-24 sm:py-32 objectives items-center flex flex-col gap-10">
+      <div id='programsSection' class="bg-white pt-12 py-24 sm:py-32 objectives items-center flex flex-col gap-10">
         <header className='header'>
-          <h1 className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl font-LibreBaskerville '>Our Programs</h1>
+          <h1 className='mt-2 text-2xl font-bold tracking-tight sm:text-4xl font-LibreBaskerville '>Our Programs</h1>
         </header>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
