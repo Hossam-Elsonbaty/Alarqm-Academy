@@ -55,7 +55,7 @@ export const Login = () => {
         <div className="text-center mt-6">
           <p className="text-sm text-gray-500">
             Not registered yet?{' '}
-            <a href="#" className="text-blue-500 hover:underline">
+            <a href="/sign-up" className="text-blue-500 hover:underline">
               Create an account
             </a>
           </p>
