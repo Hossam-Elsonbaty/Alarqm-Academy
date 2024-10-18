@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../Images/PNG Blue.png';
 import { Link } from 'react-scroll';
+
 import { useState } from 'react'
 import {
   Dialog,
@@ -17,10 +18,10 @@ const Navbar = () => {
     <header className="z-10 bg-white fixed top-0 left-0 w-full">
       <nav aria-label="Global" className="mx-auto px-2 flex max-w-7xl items-center justify-between p-1 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link to='/' className="-m-1.5 p-1.5">
+          <a href='/' className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img alt="" src={Logo} className="h-16 w-auto" />
-          </Link>
+          </a>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -33,7 +34,7 @@ const Navbar = () => {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
+          <Link to="Hero" className="cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
             HOME
           </Link>
           <Link  spy={true} smooth={true} offset={50} duration={500} to="heroSection" className=" cursor-pointer tracking-wider text-sm font-poppins font-semibold leading-6 text-navbar-blue">
@@ -80,7 +81,7 @@ const Navbar = () => {
           <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6 ">
               <Link
-                to="/"
+                to="hero"
                 onClick={() => setMobileMenuOpen(false)}
                 className="cursor-pointer -mx-3 tracking-wider block font-poppins rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar-blue hover:bg-gray-50"
               >

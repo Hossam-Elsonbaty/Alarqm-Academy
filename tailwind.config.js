@@ -22,10 +22,16 @@ module.exports = {
     lineHeight:{
       'xxl':'3rem'
     },
+    borderRadius: {
+      'half':'50%'
+    },
     extend: {
       colors: {
         'navbar-blue' : 'rgb(40 105 130)',
         'golden-sand' : '#d8b773',
+        'deep-teal' : '#256882',
+        'deep-teal-hover' : '#22566a',
+        'golden-sand-hover' : 'rgb(178 150 92)',
       }
     },
   },

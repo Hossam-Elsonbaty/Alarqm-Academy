@@ -7,6 +7,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTop from './Components/ScrollToTop';
 import { SignUp } from './Pages/SignUp';
+import { ProgramApplication } from './Pages/ProgramApplication';
+import { ContactUs } from './Pages/ContactUs';
 const App = ()=> {
   const location = useLocation();
   useEffect(()=>{
@@ -19,6 +21,8 @@ const App = ()=> {
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" exact element={<SignUp />} />
         <Route path="/" exact element={<Home />} />
+        <Route path="/program-application" exact element={<ProgramApplication />} />
+        <Route path="/contact-us" exact element={<ContactUs />} />
       </Routes>
     </>
   )

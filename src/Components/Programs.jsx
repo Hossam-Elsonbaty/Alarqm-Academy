@@ -41,7 +41,7 @@ export const Programs = () => {
                 <span className='price'>{FormatCurrency(150)}</span>
                 <span className='type'>/month</span>
               </div>
-              <button className='start'>GET STARTED</button>
+              <a href='program-application' className='start'>GET STARTED</a>
             </div>
             <div className='Program flex flex-col gap-4 items-center'data-aos="fade-up"data-aos-delay="400" data-aos-duration="1000">
               <img src={image} alt="image" className='w-24' />

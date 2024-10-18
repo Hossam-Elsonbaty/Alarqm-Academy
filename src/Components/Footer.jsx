@@ -19,10 +19,10 @@ export const Footer = () => {
           </a>
         </div>
         <div class="flex justify-center space-x-4 text-xxs uppercase mb-8">
-          <a href="#" class="hover:underline">Home</a>
+          <a href="/" class="hover:underline">Home</a>
           <a href="#" class="hover:underline">About</a>
           <a href="#" class="hover:underline">Programs</a>
-          <a href="#" class="hover:underline">Contact Us</a>
+          <a href="/contact-us" class="hover:underline">Contact Us</a>
           <a href="#" class="hover:underline">Our Team</a>
         </div>
         <div class="text-sm mt-4">
