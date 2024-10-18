@@ -54,7 +54,7 @@ export const ContactUs = () => {
           {/* Contact Info */}
           <div className="w-full lg:w-4/12 space-y-8">
             <div className="flex items-center space-x-3">
-              <i className='p-3 rounded-half bg-deep-teal'>
+              <i className='p-3 rounded-half bg-golden-sand'>
                 <FaMapLocationDot className='text-xl text-white'/>
               </i>
               <p className="text-gray-600">
@@ -62,7 +62,7 @@ export const ContactUs = () => {
               </p>
             </div>
             <div className="flex items-center space-x-3">
-              <i className='p-3 rounded-half bg-deep-teal'>
+              <i className='p-3 rounded-half bg-golden-sand'>
                 <FaRegClock className='text-xl text-white'/>
               </i>
               <p className="text-gray-600">
@@ -70,7 +70,7 @@ export const ContactUs = () => {
               </p>
             </div>
             <div className="flex items-center space-x-3">
-              <i className='p-3 rounded-half bg-deep-teal'>
+              <i className='p-3 rounded-half bg-golden-sand'>
                 <MdEmail className='text-xl text-white'/>
               </i>
               <p className="text-gray-600">
@@ -78,7 +78,7 @@ export const ContactUs = () => {
               </p>
             </div>
             <div className="flex items-center space-x-3">
-              <i className='p-3 rounded-half bg-deep-teal'>
+              <i className='p-3 rounded-half bg-golden-sand'>
                 <FaPhoneVolume className='text-xl text-white'/>
               </i>
               <p className="text-gray-600">

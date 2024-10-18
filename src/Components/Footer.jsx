@@ -5,7 +5,7 @@ import { CiTwitter } from "react-icons/ci";
 
 export const Footer = () => {
   return (
-    <footer id='footerSection' class="bg-black text-white py-20 ">
+    <footer id='footerSection' class="bg-deep-teal text-white py-20 ">
       <div class="container mx-auto text-center">
         <div class="flex justify-center mb-8">
           <a href="#" class="mx-3 text-3xl">
@@ -18,7 +18,7 @@ export const Footer = () => {
             <CiTwitter/>
           </a>
         </div>
-        <div class="flex justify-center space-x-4 text-xxs uppercase mb-8">
+        <div class="flex justify-center space-x-4 text-sm uppercase mb-8">
           <a href="/" class="hover:underline">Home</a>
           <a href="#" class="hover:underline">About</a>
           <a href="#" class="hover:underline">Programs</a>
