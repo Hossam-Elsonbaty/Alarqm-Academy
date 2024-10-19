@@ -2,7 +2,7 @@ import React from 'react';
 import { CiFacebook } from "react-icons/ci";
 import { CiInstagram } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
-
+import { Link as RouterLink } from 'react-router-dom';
 export const Footer = () => {
   return (
     <footer id='footerSection' class="bg-deep-teal text-white py-20 ">
@@ -21,7 +21,15 @@ export const Footer = () => {
         <div class="flex justify-center space-x-4 text-sm uppercase mb-8">
           <a href="/" class="hover:underline">Home</a>
           <a href="#" class="hover:underline">About</a>
-          <a href="#" class="hover:underline">Programs</a>
+          <RouterLink 
+            to="/#programsSection"
+            smooth={true} 
+            duration={500} 
+            offset={-250}
+            className="cursor-pointer hover:underline"
+          >
+            Programs
+          </RouterLink>
           <a href="/contact-us" class="hover:underline">Contact Us</a>
           <a href="#" class="hover:underline">Our Team</a>
         </div>
