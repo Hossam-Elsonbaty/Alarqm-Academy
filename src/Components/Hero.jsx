@@ -6,6 +6,7 @@ export default function Example() {
   // const text = "AL-Arqam Academy aims to make Shariah studies accessible for the participants in its programs. The main objective of the program is to equip young Muslims with the necessary, proper knowledge grounded on the Book of Allah and Sunnah of the Prophet (PBUH) to understand their religion and to promote and reinforce sound Shariah studies with an understanding of the righteous predecessors through a modern, easily fathomable approach that is in touch with the reality of time and place.";
   const text2 = "“Of all of Allah’s servants, only the knowledgeable (of His might) are (Truly)in awe of Him”";
   const text3 = "إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ";
+  // const text3 = "“إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ”"
   const [text] = useTypewriter({
     words:[text3],
     loop: 1,

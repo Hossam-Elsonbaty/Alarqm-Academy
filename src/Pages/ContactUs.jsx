@@ -8,7 +8,7 @@ export const ContactUs = () => {
   return (
     <>
       <div className="flex justify-center items-center h-screen bg-gray-100">
-        <div className="container flex flex-col lg:flex-row justify-between w-11/12 lg:w-3/4 bg-white p-10 shadow-lg rounded-md">
+        <div className="container flex flex-col lg:flex-row justify-between w-11/12 lg:w-3/4 bg-white sm:mt-0 mt-20 p-10 shadow-lg rounded-md">
           
           {/* Contact Form */}
           <div className="w-full lg:w-7/12 mb-8 lg:mb-0">
