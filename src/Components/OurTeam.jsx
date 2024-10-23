@@ -12,7 +12,7 @@ export const OurTeam = () => {
         </header>
         <div  class="mx-auto max-w-7xl px-6 lg:px-8 ourTeam">
           <dl class="grid grid-cols-1 gap-x-16 gap-y-16 text-center lg:grid-cols-3">
-            <div className='teammate p-10 flex flex-col gap-6 items-center'data-aos="fade-right"data-aos-delay="200" data-aos-duration="500">
+            <div className='teammate p-10 flex flex-col gap-6 items-center'data-aos="fade-right"data-aos-delay="500" data-aos-duration="1000">
               <div className="imgContainer">
                 <img src={image1} alt="image" className='teammateImage' />
               </div>
@@ -26,7 +26,7 @@ export const OurTeam = () => {
                 <a href="#"><CiLinkedin className='text-blue-600'/></a>
               </div>
             </div>
-            <div className='teammate p-10 flex flex-col gap-6 items-center'data-aos="fade-right"data-aos-delay="400" data-aos-duration="600">
+            <div className='teammate p-10 flex flex-col gap-6 items-center'data-aos="fade-right"data-aos-delay="1000" data-aos-duration="1000">
               <div className="imgContainer">
                 <img src={image1} alt="image" className='teammateImage' />
               </div>
@@ -40,7 +40,7 @@ export const OurTeam = () => {
                 <a href="#"><CiLinkedin className='text-blue-600'/></a>
               </div>
             </div>
-            <div className='teammate p-10 flex flex-col gap-6 items-center'data-aos="fade-right"data-aos-delay="600" data-aos-duration="700">
+            <div className='teammate p-10 flex flex-col gap-6 items-center'data-aos="fade-right"data-aos-delay="1500" data-aos-duration="1000">
               <div className="imgContainer">
                 <img src={image1} alt="image" className='teammateImage' />
               </div>

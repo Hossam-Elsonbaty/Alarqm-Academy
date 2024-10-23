@@ -9,8 +9,6 @@ export const ContactUs = () => {
     <>
       <div className="flex justify-center py-12 items-center bg-gray-100">
         <div className="container flex flex-col lg:flex-row justify-between w-11/12 lg:w-3/4 bg-white  p-10 shadow-lg rounded-md">
-          
-          {/* Contact Form */}
           <div className="w-full lg:w-7/12 mb-8 lg:mb-0">
             <form className="space-y-6">
               <div className="flex gap-4">
@@ -51,7 +49,6 @@ export const ContactUs = () => {
               </button>
             </form>
           </div>
-          {/* Contact Info */}
           <div className="w-full lg:w-4/12 space-y-8">
             <div className="flex items-center space-x-3">
               <i className='p-3 rounded-half bg-golden-sand'>

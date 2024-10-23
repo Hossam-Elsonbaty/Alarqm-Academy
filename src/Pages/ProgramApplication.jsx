@@ -1,6 +1,12 @@
 import React, {useState} from 'react';
+import { ChildApplication } from '../Components/ChildApplication';
 export const ProgramApplication = () => {
   const [student, setStudent] = useState(true);
+  const [kidsCount, setKidsCount] = useState(0);
+  const handleAddKids = (e)=>{
+    setKidsCount(Number(e.target.value))
+    console.log(e.target.value);
+  }
   return (
     <>
       <div className=" flex flex-col items-center justify-center">
@@ -156,20 +162,25 @@ export const ProgramApplication = () => {
               />
             </div>
             <div className="mb-4">
-              <select  name="programType" id="programType" className=" text-sm w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none">
-                <option value="How many kids are you interested in registering" hidden selected> How many kids are you interested in registering</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3"> 3</option>
-                <option value="4"> 4</option>
-                <option value="5"> 5</option>
-                <option value="6"> 6</option>
-                <option value="7"> 7</option>
-                <option value="8"> 8</option>
-                <option value="9"> 9</option>
-                <option value="10"> 10</option>
+              <select
+                onChange={(e) => handleAddKids(e)}
+                name="kidsCount"
+                id="kidsCount"
+                className="text-sm w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none"
+              >
+                <option value="0" hidden selected>
+                  How many kids are you interested in registering?
+                </option>
+                {[...Array(10).keys()].map((i) => (
+                  <option key={i} value={i + 1}>
+                    {i + 1}
+                  </option>
+                ))}
               </select>
             </div>
+            {Array.from({ length: kidsCount }).map((_, index) => (
+              <ChildApplication key={index} kidsCount={index + 1} />
+            ))}
             <button
               type="submit"
               className="w-full bg-deep-teal text-white py-2 rounded-md hover:bg-deep-teal-hover transition duration-200"
@@ -183,4 +194,84 @@ export const ProgramApplication = () => {
     </>
   );
 };
+// import React, { useState } from 'react';
+// import { ChildApplication } from '../Components/ChildApplication';
+
+// export const ProgramApplication = () => {
+//   const [student, setStudent] = useState(true);
+//   const [kidsCount, setKidsCount] = useState(0);
+//   const [showChildForm, setShowChildForm] = useState(false); // New state to control ChildApplication
+//   const handleAddKids = (e) => {
+//     const value = e.target.value;
+//     setKidsCount(value);
+//     // Show ChildApplication component if a valid kids count is selected (1 or more)
+//     setShowChildForm(value > 0);
+//   };
+//   return (
+//     <>
+//       <div className="flex flex-col items-center justify-center">
+//         <div className="bg-white rounded-lg p-10 pt-20 w-full max-w-2xl">
+//           <div className="mb-8 flex justify-between items-center border-deep-teal border-solid border-t-2 rounded-t">
+//             <div
+//               className={`${
+//                 student
+//                   ? 'bg-deep-teal text-white student p-2 w-full text-center'
+//                   : 'student p-2 w-full text-center bg-transparent'
+//               }`}
+//               onClick={() => setStudent(true)}
+//             >
+//               <p className="text-base">Student</p>
+//             </div>
+//             <div
+//               className={`${
+//                 !student
+//                   ? 'bg-deep-teal text-white student p-2 w-full text-center'
+//                   : 'student p-2 w-full text-center bg-transparent'
+//               }`}
+//               onClick={() => setStudent(false)}
+//             >
+//               <p className="text-base">Parent</p>
+//             </div>
+//           </div>
+//           {student ? (
+//             // Student Form
+//             <form>
+//               {/* Student form fields */}
+//               <div className="mb-4">
+//                 <select
+//                   onChange={(e) => handleAddKids(e)}
+//                   name="kidsCount"
+//                   id="kidsCount"
+//                   className="text-sm w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none"
+//                 >
+//                   <option value="0" hidden selected>
+//                     How many kids are you interested in registering?
+//                   </option>
+//                   {[...Array(10).keys()].map((i) => (
+//                     <option key={i} value={i + 1}>
+//                       {i + 1}
+//                     </option>
+//                   ))}
+//                 </select>
+//               </div>
+//               {/* Conditionally render ChildApplication */}
+//               {showChildForm && <ChildApplication kidsCount={kidsCount} />}
+//               <button
+//                 type="submit"
+//                 className="w-full bg-deep-teal text-white py-2 rounded-md hover:bg-deep-teal-hover transition duration-200"
+//               >
+//                 Submit Application
+//               </button>
+//             </form>
+//           ) : (
+//             // Parent Form (if needed)
+//             <form>
+//               {/* Parent form fields */}
+//             </form>
+//           )}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
